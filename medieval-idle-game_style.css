@@ -1,0 +1,96 @@
+body {
+  font-family: 'Cinzel', 'Times New Roman', serif;
+  background: #fdf6e3 url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #4e3524;
+  margin: 0;
+}
+#header {
+  background: rgba(230, 210, 170, 0.97);
+  padding: 12px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px #b9a16b88;
+  border-bottom: 2px solid #b9a16b;
+}
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2em;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.3em;
+  color: #b9a16b;
+  margin-top: 0;
+}
+#dashboard {
+  background: rgba(255,255,255,0.96);
+  max-width: 600px;
+  margin: 24px auto 0 auto;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #b9a16b33;
+  font-size: 1.2em;
+}
+#controls, #events {
+  max-width: 600px;
+  margin: 16px auto 0 auto;
+  padding: 12px 18px;
+  background: rgba(245,235,210,0.98);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #b9a16b22;
+}
+#output {
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 8px 18px;
+  background: rgba(232,220,185,0.96);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px #b9a16b22;
+  min-height: 32px;
+  font-size: 1em;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  margin-top: 36px;
+  color: #b9a16b;
+}
+button {
+  margin: 7px 7px 0 0;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 6px;
+  border: 1px solid #b9a16b;
+  background: linear-gradient(90deg,#f3e8c8 0%, #f7ecd3 100%);
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: 'Cinzel', serif;
+}
+button:hover {
+  background: #e3cd93;
+  color: #4e3524;
+}
+.building {
+  background: #f3e8c8;
+  border: 1px solid #b9a16b;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  padding: 13px;
+  box-shadow: 2px 2px 7px #b9a16b55;
+}
+.upgraded {
+  animation: upgradeFlash 0.8s;
+}
+@keyframes upgradeFlash {
+  0% { background: #fff7c1; }
+  100% { background: #f3e8c8; }
+}
+@media (max-width: 700px) {
+  #dashboard, #controls, #events, #output {
+    max-width: 97vw;
+    padding: 3vw;
+    font-size: 1em;
+  }
+}
